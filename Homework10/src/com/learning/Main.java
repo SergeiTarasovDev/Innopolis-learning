@@ -28,6 +28,7 @@ public class Main {
         relocatables[2] = square1;
         relocatables[3] = square2;
 
+        // Перемещение на новую позицию
         for (Relocatable relocatable: relocatables) {
             relocatable.setPosition(3, 2);
         }
