@@ -24,9 +24,9 @@ class Homework05 {
 		}
 		
 		if (min == 10) {
-			System.out.println("Вы не ввели ни одного числа!");
+			System.out.println("Р’С‹ РЅРµ РІРІРµР»Рё РЅРё РѕРґРЅРѕРіРѕ С‡РёСЃР»Р°!");
 		} else {
-			System.out.println("Ответ: " + min);
+			System.out.println("РћС‚РІРµС‚: " + min);
 		}
 	}
 }
