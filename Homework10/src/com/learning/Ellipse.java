@@ -8,10 +8,6 @@ public class Ellipse extends Figure {
         this.centerY = centerY;
     }
 
-    /*@Override
-    public void setPosition(double changeX, double changeY) {
-    }*/
-
     @Override
     public double getPerimeter() {
         return 2 * Math.PI * Math.sqrt((width * width + height * height) / 8);

@@ -8,10 +8,6 @@ public class Rectangle extends Figure {
         this.centerY = centerY;
     }
 
-/*    @Override
-    public void setPosition(double changeX, double changeY) {
-    } */
-
     @Override
     public double getPerimeter() {
         return (this.width + this.height) * 2;
