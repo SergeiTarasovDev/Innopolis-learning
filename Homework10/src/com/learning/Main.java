@@ -22,7 +22,7 @@ public class Main {
         // В Main создать массив "перемещаемых" фигур и сдвинуть все их в одну конкретную точку.
 		
 		// Сначала я делал так (и все работало):
-        /*Relocatable[] figures = new Relocatable[4];
+        /*Relocatable[] relocatables = new Relocatable[4];
         relocatables[0] = circle1;
         relocatables[1] = circle2;
         relocatables[2] = square1;
