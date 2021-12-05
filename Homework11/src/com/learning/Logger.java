@@ -25,8 +25,8 @@ public class Logger {
     }
 
     /**
-     * Выводит сообщение в консоль
-     * @param message Сообщение, которое необходимо вывести в консоль
+     * print message to the console
+     * @param message
      */
     public void log(String message) {
         this.lastMessage = message;
