@@ -3,16 +3,17 @@ package com.learning;
 public class Sequence {
 
     /**
-     * Метод выполняет фильтрацию массива по условию
-     * @param array Исходный массив
-     * @param condition Условие отбора элементов
-     * @return Массив, содержащий элементы из исходного массива, соответствующие условию
+     * filtering an array by condition
+     * @param array source array
+     * @param condition condition for filtering
+     * @return filtered array
      */
+    // Task: Данный метод возвращает массив, который содержит элементы, удовлетворяющиие логическому выражению в condition.
     public static int[] filter(int[] array, ByCondition condition) {
         int[] temp = new int[array.length];
         int current = 0;
         for (int element: array) {
-            if (condition.isOk(element)) {
+            if (element != 0 && condition.isOk(element)) {
                 temp[current] = element;
                 current++;
             }
@@ -28,13 +29,13 @@ public class Sequence {
     }
 
     /**
-     * Метод выводит в консоль эелементы массива
-     * @param array Массив, содержащий элементы для вывода
-     * @param message Сообщение, содержащее пояснение к массиву
+     * print elements of array
+     * @param array
+     * @param comment
      */
-    public static void printArray(int[] array, String message) {
+    public static void printArray(int[] array, String comment) {
         System.out.println();
-        System.out.println(message + ":");
+        System.out.println(comment + ":");
         for (int element: array) {
             System.out.print(element + " ");
         }

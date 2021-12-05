@@ -3,9 +3,9 @@ package com.learning;
 public interface ByCondition {
 
     /**
-     * Метод проверяет соответствует ли элемент условию
-     * @param number Число, которое необходимо проверить на соответствие условию
-     * @return Соответствует число условию (true) или нет (false)
+     * checks if the element meets the condition
+     * @param number checked number
+     * @return
      */
     boolean isOk(int number);
 }
