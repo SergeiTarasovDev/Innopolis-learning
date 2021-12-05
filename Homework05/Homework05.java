@@ -13,14 +13,18 @@ class Homework05 {
 				a *= -1;
 			}
 			
-			while (a > 0) {
-				remainder = a % 10;
-				if (remainder < min) {
-					min = remainder;
+			while (a >= 0) {
+				if (a != 0) {
+					remainder = a % 10;
+					if (remainder < min) {
+						min = remainder;
+					}
+					a = a / 10;
+				} else {
+					min = 0;
 				}
-				a = a / 10;
-			}
 			a = scanner.nextInt();		
+			}
 		}
 		
 		if (min == 10) {
