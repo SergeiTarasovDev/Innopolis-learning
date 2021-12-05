@@ -5,21 +5,20 @@ import java.util.ArrayList;
 public class Main {
 
     /**
-     * Процедура выводит на экран массив объектов
-     * @param persons Содержит массив с информацией о людях, который необходимо вывести на экран
+     * print array on screen
+     * @param persons array with persons, for print screen
      */
-    public static void readPersonArray(ArrayList<Person> persons) {
-        for (Person person:
-             persons) {
+    private static void readPersonArray(ArrayList<Person> persons) {
+        for (Person person: persons) {
             System.out.println(person.getName() + ": " + person.getWeight());
         }
         System.out.println();
     }
 
     /**
-     * Функция сортирует массив объектов Person по возростанию веса людей, методом сортировки выбором.
-     * @param persons Содержит массив, который необходимо отсортировать
-     * @return Возвращает отсортированный массив
+     * Sorts an array of Person. On increasing weight. Selection sort method.
+     * @param persons Array for sort
+     * @return Sorted array
      */
     public static ArrayList<Person> sortPersonArray(ArrayList<Person> persons) {
         Person temp = new Person("temp", 0);
@@ -59,7 +58,7 @@ public class Main {
 
     static class Person {
         private String name;
-        private double weight = 0;
+        private double weight;
 
         public Person(String name, double weight) {
             this.name = name;
