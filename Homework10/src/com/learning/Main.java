@@ -42,7 +42,7 @@ public class Main {
 
         // Перемещение на новую позицию
         for (Figure figure: figures) {
-            if( (figure instanceof Circle) || (figure instanceof Square)) {
+            if((figure instanceof Circle) || (figure instanceof Square)) {
                 Relocatable relocatable = (Relocatable) figure;
                 relocatable.setPosition(3, 2);
             }

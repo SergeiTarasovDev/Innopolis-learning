@@ -10,11 +10,6 @@ public class Square extends Rectangle implements Relocatable {
         return this.width * 4;
     }
 
-    /**
-     * Метод перемещает фигуру на заданные координаты.
-     * @param changeX новая координата по оси X
-     * @param changeY новая координата по оси Y
-     */
     @Override
     public void setPosition(double changeX, double changeY) {
         this.centerX = changeX;
