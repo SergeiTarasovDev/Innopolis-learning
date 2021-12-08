@@ -30,7 +30,11 @@ effective-settings.xml
 */dependency-reduced-pom.xml
 node_modules
 <<<<<<< HEAD
+<<<<<<< HEAD
 *.kotlin_module
 =======
 hw2/
 >>>>>>> 776e151 (repair gitignore)
+=======
+hw2/
+>>>>>>> refs/remotes/origin/homeworks/16
