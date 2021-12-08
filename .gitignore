@@ -29,4 +29,8 @@ effective-settings.xml
 *.jar
 */dependency-reduced-pom.xml
 node_modules
+<<<<<<< HEAD
 *.kotlin_module
+=======
+hw2/
+>>>>>>> 776e151 (repair gitignore)
