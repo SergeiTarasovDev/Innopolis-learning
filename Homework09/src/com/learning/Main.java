@@ -4,21 +4,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        double x = 5;
-        double y = 7;
-        Figure figure = new Figure(x, y);
+        Circle circle = new Circle(-5, 10, 30);
+        Ellipse ellipse = new Ellipse(12, 19, 2, 3);
 
-        Figure circle = new Circle(x);
-        Figure ellipse = new Ellipse(x, y);
+        Square square = new Square(-6, -7, 7);
+        Rectangle rectangle1 = new Rectangle(22, 90, 12, 7);
+        Rectangle rectangle2 = new Rectangle(22, 90, -12, -7); // проверка отрицательных сторон
 
-        Figure square = new Square(x);
-        Figure rectangle = new Rectangle(x, y);
-
-        System.out.println("Периметр фигуры: " + figure.getPerimeter());
         System.out.println("Периметр круга: " + circle.getPerimeter());
         System.out.println("Периметр овала: " + ellipse.getPerimeter());
         System.out.println("Периметр квадрата: " + square.getPerimeter());
-        System.out.println("Периметр прямоугольника: " + rectangle.getPerimeter());
+        System.out.println("Периметр прямоугольника 1: " + rectangle1.getPerimeter());
+        System.out.println("Периметр прямоугольника 2: " + rectangle2.getPerimeter());
 
     }
 }

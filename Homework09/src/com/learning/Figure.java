@@ -1,28 +1,28 @@
 package com.learning;
 
 public class Figure {
-    protected double x;
-    protected double y;
+    protected double centerX; // геометрический центр по оси x
+    protected double centerY; // геометрический центр по оси y
 
-    public Figure (double x, double y) {
-        this.x = x;
-        this.y = y;
+    public Figure(double centerX, double centerY) {
+        this.centerX = centerX;
+        this.centerY = centerY;
     }
 
-    public double getX() {
-        return x;
+    public double getCenterX() {
+        return centerX;
     }
 
-    public void setX(double x) {
-        this.x = x;
+    public void setCenterX(double centerX) {
+        this.centerX = centerX;
     }
 
-    public double getY() {
-        return y;
+    public double getCenterY() {
+        return centerY;
     }
 
-    public void setY(double y) {
-        this.y = y;
+    public void setCenterY(double centerY) {
+        this.centerY = centerY;
     }
 
     public double getPerimeter () {

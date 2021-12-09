@@ -1,11 +1,14 @@
 package com.learning;
 
 public class Circle extends Ellipse {
-    public Circle (double x) {
-        super(x, x);
+    public Circle(double centerX, double centerY, double radius) {
+        super(centerX, centerY, radius, radius);
     }
 
     public double getPerimeter() {
-        return Math.PI * this.x;
+        if (this.verticalRadius <= 0) {
+            return 0;
+        }
+        return Math.PI * this.verticalRadius;
     }
 }
