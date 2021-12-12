@@ -5,17 +5,32 @@ class Homework05 {
 		Scanner scanner = new Scanner(System.in);
 		int a = scanner.nextInt();
 		int remainder;
-		int min = 9;
+		int min = 10;		
+		
 		while (a != -1) {
-			while (a > 0) {
-				remainder = a % 10;
-				if (remainder < min) {
-					min = remainder;
-				}
-				a = a / 10;
+			
+			if (a < 0) {
+				a *= -1;
 			}
+			
+			while (a >= 0) {
+				if (a != 0) {
+					remainder = a % 10;
+					if (remainder < min) {
+						min = remainder;
+					}
+					a = a / 10;
+				} else {
+					min = 0;
+				}
 			a = scanner.nextInt();		
+			}
 		}
-		System.out.println("Ответ: " + min);		
+		
+		if (min == 10) {
+			System.out.println("Вы не ввели ни одного числа!");
+		} else {
+			System.out.println("Ответ: " + min);
+		}
 	}
 }
