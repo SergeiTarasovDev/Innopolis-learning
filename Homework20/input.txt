@@ -1,0 +1,7 @@
+o001oe111|Camry|Black|700|82000
+a002ox02|Getz|Yellow|550|0
+e003ac77|Rio|Silver|650|122000
+x004eo98|Vesta|White|600|33000
+c005xc45|Diablo|Black|1200|0
+o006co71|Solaris|Black|800|4100
+c007oa89|Fiesta|Silver|740|12000
